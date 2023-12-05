@@ -52,7 +52,7 @@
                 </a>
               </li>
               {% if site.blog_nav_title %}
-              <!-- Blog -->
+              <!-- Blog --
               <li class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
                 <a class="nav-link" href="{{ '/blog/' | relative_url }}">{{ site.blog_nav_title }}
                   {%- if page.url contains 'blog' -%}
@@ -61,7 +61,7 @@
                 </a>
               </li>
               {%- endif %}
-
+              !-- Blog -->
               <!-- Other pages -->
               {%- assign sorted_pages = site.pages | sort: "nav_order" -%}
               {%- for p in sorted_pages -%}
@@ -81,6 +81,7 @@
                   <a class="dropdown-item" href="{{ child.permalink | relative_url }}">{{ child.title }}</a>
                   {%- endif -%}
                   {% endfor %}
+
                 </div>
               </li>
               {%- else %}
@@ -94,6 +95,10 @@
               {%- endif -%}
               {%- endif -%}
               {% endfor -%}
+              <!-- CV -->
+              <li class="nav-item">
+                <a class="nav-link" href="{{ '/assets/pdf/CV-Reza(Rey)Sanayei-Fall23-Final.pdf' | relative_url }}" target="_blank">CV</a>
+              </li>
               {%- if site.enable_darkmode %}
 
               <!-- Toogle theme mode -->
