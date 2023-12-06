@@ -18,4 +18,4 @@ related_publications:
 
 
 - **Indexed and retrieved data from 280,000 Wikipedia pages** with **Lucene**, addressing specific content challenges
-- Implemented a **QA system** using  the **BERT** transformer and **K-means clustering** for **unsupervised learning**, followed by **supervised ranking**, **achieving 70% accuracy**
+- Implemented a **QA system** using **K-means clustering** for **unsupervised learning**, followed by **supervised ranking**, **achieving 70% accuracy**
